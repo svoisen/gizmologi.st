@@ -65,9 +65,14 @@ td { vertical-align: top; }
 /* ==|== primary styles ===================================================== */
 
 body { background: #fff url(../img/bg.png) repeat-x scroll 0 0; }
-#container { width: 960px; margin: 60px auto 20px auto; }
-header { background: transparent url(../img/logo.png) no-repeat scroll 0 0; height: 53px; }
+#container { width: 950px; margin: 60px auto 20px auto; }
+header { background: transparent url(../img/logo.png) no-repeat scroll 13px 0; height: 53px; }
 header h1 { display: none; }
+footer { clear: both; margin: 20px 15px 0 15px; }
+#main { margin-top: 20px; }
+#slideshow { position: relative; }
+#slideshow .border { position: absolute; top: 0; left: 0; z-index: 1; background: transparent url(../img/slide_border.png) no-repeat scroll 0 0; width: 950px; height: 362px; }
+#content .column1 { margin-left: 15px; float: left; width: 600px; }
 
 
 
