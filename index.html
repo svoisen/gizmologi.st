@@ -34,14 +34,22 @@
     <div id="main" role="main">
       <div id="slideshow" class="slides">
         <div class="border"></div>
-        <div class="slide">
-          <img src="img/slide_1.jpg" />
+        <div class="slideshow-container">
+          <div class="slide">
+            <img src="img/slide_1.jpg" />
+          </div>
+          <div class="slide">
+            <img src="img/slide_2.jpg" />
+          </div>
+          <div class="slide">
+            <img src="img/slide_3.jpg" />
+          </div>
         </div>
       </div>
 
       <div id="content">
         <div class="column1">
-          <h2>The Bluenumi Clock</h2>
+          <h2>The Bluenumi Clock Kit</h2>
           <p>The Bluenumi Clock is a small, functional, and beautiful desktop clock featuring the warm &ldquo;retro&rdquo; glow of 1970s-era <a href="http://www.decodesystems.com/numitron.html" title="Learn more about Numitrons">numitron</a> display technology from the former Soviet Union.<p>
           <p>Designed for makers and tinkerers who want an easy-to-assemble, 100% open-source kit clock that has nixie tube aesthetics, Bluenumi uses only through-hole electronic components and low voltages.</p>
           
@@ -50,6 +58,7 @@
             <li>&ldquo;Retro&rdquo; incandescent glowing display, featuring Soviet IV-9 numitron tubes</li>
             <li>DS1307 real time clock with backup battery for accurate timekeeping and alarm memory preservation during loss of power</li>
             <li>Blue LED underlighting for each digit, with customizable fade patterns</li>
+            <li>Laser cut clear acrylic case</li>
             <li>Programmable alarm</li>
             <li>12- or 24-hour operating mode with AM/PM indicator light</li>
             <li>Easy display blanking for nighttime use and tube life preservation</li>
@@ -58,7 +67,7 @@
           </ul>
 
           <h3>Assembly</h3>
-          <p><strong>The kit includes</strong> all electronic components, instruction manual, battery, a well-marked PCB, switch mode power supply (US 120V/60Hz), acrylic case and associated hardware. <strong>You supply</strong> a temperature-controlled soldering iron, solder (leaded or lead-free), phillips screwdriver, multimeter (recommended), two to three hours of spare time, and a can-do attitude.</p>
+          <p><strong>The kit includes</strong> all electronic components, instruction manual, battery, a well-marked PCB, switch mode power supply (US 120V/60Hz), acrylic case and associated hardware. <strong>You supply</strong> a temperature-controlled soldering iron, solder (leaded or lead-free), tools (screwdriver, pliers), multimeter (recommended), two to three hours of spare time, and a can-do attitude.</p>
           <p>Detailed assembly instructions (with photos) will be available online once clock kits begin shipping.</p>
 
           <h3>Hacking</h3>
@@ -67,15 +76,16 @@
         </div>
 
         <div class="column2">
-          <h2>Pre-order: $95</h2>
-          <p><strong>Limited supply!</strong> Numitron tubes are out of production components. The number of clock kits available is limited by the number of numitrons I can acquire. <strong>By ordering now you are ensuring that you will get a clock kit before I run out.</strong></p>
-          <p>Clock kits are expected to ship by <em>end of February, 2012</em>. Thanks for supporting small business and open hardware!</p>
+          <h2>Pre-order: $85</h2>
+          <p><strong>Free shipping within the US!</strong></p>
+          <!--<p><strong>Limited supply!</strong> Numitron tubes are out of production components. The number of clock kits available is limited by the number of numitrons I can acquire. <strong>By ordering now you are ensuring that you will get a clock kit before I run out.</strong></p>-->
+          <p>Clock kits are expected to ship by <em>end of February, 2012.</em> Thanks for supporting small business and open hardware!</p>
           <div class="cart">
             <img src="img/add_to_cart.png" />
           </div>
           <h3>Shipping Costs</h3>
           <p>Domestic (US): <strong>Free!</strong> USPS Priority Mail<br /><small>Expect 2-5 business days for delivery.</small></p>
-          <p>International: <strong>$30</strong> Priority International<br /><small>Expect 1-2 weeks for delivery.</small></p>
+          <p>International: <strong>$20</strong> USPS Priority International<br /><small>Expect 1-2 weeks for delivery.</small></p>
         </div>
       </div>
     </div>
@@ -95,6 +105,17 @@
   <script defer src="js/script.js"></script>
   <!-- end scripts-->
 
+  <script>
+    $(function() {
+      $("#slideshow").slides({
+        generateNextPrev: false,
+        container: "slideshow-container",
+        hoverPause: true,
+        preload: true,
+        play: 5000
+      });
+    });
+  </script>
 
   <script> // Change UA-XXXXX-X to be your site's ID
     window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
