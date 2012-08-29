@@ -67,9 +67,9 @@ a { color: #cc0000; border-bottom: 1px solid #ccc; background-color: #f2f2f2; te
 a:visited { color: #cc0000; }
 a:hover { color: #cc0000; background-color: #ffffcc; }
 #container { width: 950px; margin: 60px auto 20px auto; }
-header { background: transparent url(../img/logo.png) no-repeat scroll 13px 0; height: 53px; }
+header { background: url(../img/logo.png) no-repeat; background-position: 13px 0; background-size: 922px 53px; height: 53px; }
 header h1 { display: none; }
-footer { clear: both; border-top: 1px solid #ccc; padding: 0.5em 15px 0 15px; color: #666; background: transparent url(../img/open_hardware.png) no-repeat scroll right 25px; }
+footer { clear: both; border-top: 1px solid #ccc; padding: 0.5em 15px 0 15px; color: #666; background: url(../img/open_hardware.png) no-repeat; background-position: right 25px; background-size: 108px 88px; }
 #main { margin-top: 20px; }
 #slideshow { position: relative; }
 #slideshow .slideshow-container { width: 950px; height: 362px; }
@@ -83,15 +83,21 @@ footer p { font-size: 1.1em; line-height: 1.4em; }
 #content .column2 { margin: 0 15px 0 590px; background-color: #f2f2f2; padding: 20px; }
 #content h2, #content h3 { font-family: "futura-pt-condensed", Arial, sans-serif; text-transform: uppercase; font-weight: normal; }
 #content h2 { font-size: 3.0em; border-bottom: 1px solid #ccc; color: #444; margin: 0 0 0.5em 0; }
-#content .column2 h2 { margin-bottom: 0 }
+#content .column2 h2 { margin-bottom: 0; margin-top: 1em; }
+#content .column2 h2:first-child { margin-top: 0 }
 #content h3 { font-size: 2.2em; color: #444; margin: 1.2em 0 0.2em 0; }
 #content h3+p, h3+ul { margin-top: 0; }
 #content div.cart { text-align: center; margin-top: 2em; }
 .pagination { margin: 10px auto 0 auto; width: 100px; }
 .pagination li { float: left; margin: 0 2px; }
-.pagination li a { display: block; width: 12px; height: 0; padding-top: 12px; background-image: url(../img/pagination.png); background-position: 0 -12px; overflow: hidden; background-color: transparent; border: none; }
+.pagination li a { display: block; width: 10px; height: 0; padding-top: 10px; background-image: url(../img/pagination.png); background-position: 0 -10px; overflow: hidden; background-color: transparent; border: none; background-size: 10px 20px; }
 .pagination li.current a { background-position: 0 0; }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+  header { background-image: url(../img/logo@2x.png); }
+  footer { background-image: url(../img/open_hardware@2x.png); }
+  .pagination li a { background-image: url(../img/pagination@2x.png); }
+}
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
