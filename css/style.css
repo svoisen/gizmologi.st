@@ -73,7 +73,7 @@ footer { clear: both; border-top: 1px solid #ccc; padding: 0.5em 15px 0 15px; co
 #main { margin-top: 20px; }
 #slideshow { position: relative; }
 #slideshow .slideshow-container { width: 950px; height: 362px; }
-#slideshow .border { position: absolute; top: 0; left: 0; z-index: 201; background: transparent url(../img/slide_border.png) no-repeat scroll 0 0; width: 950px; height: 362px; }
+#slideshow .border { position: absolute; top: 0; left: 0; z-index: 201; background: url(../img/slide_border.png) no-repeat; width: 950px; height: 362px; background-size: 950px 362px; }
 footer p { font-size: 1.1em; line-height: 1.4em; }
 #content { margin-top: 40px; }
 #content p { font-size: 1.1em; line-height: 1.4em; text-align: justify; }
@@ -98,6 +98,7 @@ footer p { font-size: 1.1em; line-height: 1.4em; }
   footer { background-image: url(../img/open_hardware@2x.png); }
   #content div.cart { background-image: url(../img/add_to_cart@2x.png); }
   .pagination li a { background-image: url(../img/pagination@2x.png); }
+  #slideshow .border { background-image: url(../img/slide_border@2x.png); }
 }
 
 /* ==|== non-semantic helper classes ======================================== */
