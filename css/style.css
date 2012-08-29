@@ -87,7 +87,7 @@ footer p { font-size: 1.1em; line-height: 1.4em; }
 #content .column2 h2:first-child { margin-top: 0 }
 #content h3 { font-size: 2.2em; color: #444; margin: 1.2em 0 0.2em 0; font-weight: 700; }
 #content h3+p, h3+ul { margin-top: 0; }
-#content div.cart { text-align: center; margin-top: 2em; }
+#content div.cart { text-align: center; margin-top: 2em; background-image: url(../img/add_to_cart.png); background-size: 302px 91px; width: 302px; height: 91px; }
 .pagination { margin: 10px auto 0 auto; width: 100px; }
 .pagination li { float: left; margin: 0 2px; }
 .pagination li a { display: block; width: 10px; height: 0; padding-top: 10px; background-image: url(../img/pagination.png); background-position: 0 -10px; overflow: hidden; background-color: transparent; border: none; background-size: 10px 20px; }
@@ -96,6 +96,7 @@ footer p { font-size: 1.1em; line-height: 1.4em; }
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
   header { background-image: url(../img/logo@2x.png); }
   footer { background-image: url(../img/open_hardware@2x.png); }
+  #content div.cart { background-image: url(../img/add_to_cart@2x.png); }
   .pagination li a { background-image: url(../img/pagination@2x.png); }
 }
 
